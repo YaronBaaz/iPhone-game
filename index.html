@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Iphone Upgrader</title>
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="mobile.css">
+    <link rel="stylesheet"  media="only screen and (min-width: 481px)" href="style.css" />
     <script src="script.js" defer></script>
 </head>
 <body>
 
     <div class="counterContainer">
         <section id="scorebox"></section>
+        <section id="ppcHolder">PPC: <p id="ppc"></p></section><br>
+        <section id="ppsHolder">PPS: <p id="pps"></p></section>
     </div>
 
 
@@ -31,7 +35,7 @@
     </div>
 
     <div class="upgradesLeft">
-
+        Auto Clicker<br><br>
        <button id="btn" >UPGRADE IPHONE</button>
        <div id="iphoneInfo">
            <section id="iphoneVer"> </section>
@@ -41,7 +45,7 @@
     </div>
 
     <div class="upgradesRight" >
-        <div style="border:none; border-bottom: 1px solid black; padding: none; margin: none;;">
+        <div style="border:none; border-bottom: 1px solid black; padding: none; margin: none;;" id="mobileDisappear">
             <section style="position: absolute; left: 200px;">To Upgrade</section>
             <section class="upgradecount">Amount </section>
         </div>
